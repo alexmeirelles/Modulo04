@@ -2,8 +2,7 @@
 
 Depois de apresentar os Admins (que possuem a propriedade role), precisamos corrigir os tipos para que tudo funcione bem em conjunto.
 
-O tipo "Person" está ausente, por favor, defina-o e use-o na array persons e na função logPerson para corrigir todos os erros.*/
-
+O tipo "Person" está ausente, por favor, defina-o e use-o na array persons e na função logPerson para corrigir todos os erros.
 
 interface User {
 
@@ -15,7 +14,7 @@ interface Admin {
 
 export type Person = unknown;
 
-export const persons: User[] /* <- Person[] */ = [
+export const persons: User[]  <- Person[]  = [
     {
         name: 'Max Mustermann',
         age: 25,
@@ -42,9 +41,9 @@ export function logPerson(user: User) {
     console.log(` - ${user.name}, ${user.age}`);
 }
 
-persons.forEach(logPerson);
+persons.forEach(logPerson); */
 
-/* 
+
 interface User {
     name: string;
     age: number;
@@ -87,4 +86,3 @@ export function logPerson(user: Person) {
 }
 
 persons.forEach(logPerson);
-*/
