@@ -1,4 +1,4 @@
 export class Jogos {
   id: string;
-  number: number;
+  number?: number;
 }

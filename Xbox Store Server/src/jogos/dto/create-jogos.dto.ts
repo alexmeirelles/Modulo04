@@ -8,5 +8,5 @@ export class CreateJogosDto {
     example: 'xxxxx',
   })
   id?: string;
-  name: string;
+  name?: string;
 }
