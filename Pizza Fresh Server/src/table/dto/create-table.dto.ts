@@ -1,11 +1,11 @@
-import { isPositive, isNumber } from 'class-validator';
+import { IsPositive, IsNumber } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateTableDto {
-  @isPositive()
-  @isNumber()
+  @IsPositive()
+  @IsNumber()
   @ApiProperty({
-    description: 'O numero da mesa',
+    description: 'O número da mesa',
     example: 1,
   })
   number: number;

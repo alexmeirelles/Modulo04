@@ -10,7 +10,7 @@ export class TableController {
   constructor(private tableService: TableService) {}
 
   @Get()
-  findAll(): Table[] {
+  findAll(): Promise<Table[]> {
     return this.tableService.findAll();
   }
 
